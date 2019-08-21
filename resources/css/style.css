@@ -38,12 +38,20 @@ body{
 }
 
 .row{
-    width: 80vw;
+    width: 100vw;
     height: auto;
     position: relative;
-    margin-left: 10%;
+    padding: 70px 0px;
 
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+}
+
+.inner-row{
+    width: 70vw;
+    height: auto;
+    /* background-color: lightpink; */
+    position: relative;
+    margin-left: 15%;
 }
 
 ul{ 
@@ -51,7 +59,7 @@ ul{
 }
 
 .section-tittles{
-    padding: 40px 0;
+    padding-bottom:70px;
     text-align: center;
     color: var(--light-gray);
 }
@@ -60,6 +68,14 @@ mark{
     background-color: var(--dark-gray);
     color: var(--light-gray);
     padding: 10px 20px
+}
+
+.clearfix:after{
+    visibility: hidden;
+    display: block;
+    content: ' ';
+    clear: both;
+    height: 0;
 }
 
 /** 02-text **/
@@ -72,6 +88,8 @@ h1 {
 h2 {
     font-family: 'New Rocker', cursive;
     font-size: 32px;
+    letter-spacing: 4px;
+    line-height: 45px
 }
 
 h3 {
@@ -105,7 +123,9 @@ a {
 
 .hr-dark {
     border: 1px solid var(--dark-gray);
-    margin-top: 40px;
+    margin: 70px 0 0 10%;
+    width: 80vw;
+
 }
 /** 03-header **/
 
@@ -237,20 +257,66 @@ input#search-bar{
 /** 05-featured **/
 
 .featured{
-    background-color: lightblue;
+    background-color: var(--light-gray);
+    height: auto;
 }
 
-/* .section-tittles{
-    padding: 40px 0;
-    text-align: center;
-    color: var(--light-gray);
-    background-color: var(--dark-gray);
+.featured figure img{
+    height: 25em;
+    width: 25em;
+    object-fit: cover;
+    object-position: right;
+    float: left;
+    margin-right: 20px;
+}
 
-} */
+.inner-row div{
+    height: 25em;
+    width: auto;
+}
+
+.inner-row h2{
+    margin-bottom: 80px
+}
+
+.inner-row p{
+    margin-bottom:54px
+}
 
 /** 06-new arrivals **/
 
+.card{
+    height: auto;
+    align-content: center;
+    float: left;
+    margin-right: 2.8em;
+}
+
+.card:last-child{
+    margin-right: 0;
+}
+
+.card img{
+    width: 18em;
+    height: 18em;
+    object-fit: cover;
+    object-position: right;
+}
+
+.card h6,
+.card p,
+.card h3{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+
 /** 07-joe's picks **/
+
+.joe-picks{
+    background-color: var(--light-gray);
+    width:
+}
 
 /** 08-sales **/
 
@@ -263,9 +329,9 @@ input#search-bar{
 /*buttons*/
 
 .btn-dark{
+    cursor: pointer;
     color: var(--dark-gray);
     background-color: transparent;
-    margin: 20px;
     border: 2px solid var(--dark-gray);
     height: 40px;
     width: 180px;
@@ -291,6 +357,7 @@ input#search-bar{
 }
 
 .btn-light{
+    cursor: pointer;
     color: white;
     background-color: transparent;
     margin: 20px;
@@ -316,6 +383,26 @@ input#search-bar{
     -ms-transform: translate(-8px, 8px);
     -o-transform: translate(-8px, 8px);
     color: white;
+}
+
+.btn-centre{
+    margin-top: 70px;
+    margin-left:50vw;
+    transform: translateX(-90px);
+    -webkit-transform: translateX(-90px);
+    -moz-transform: translateX(-90px);
+    -ms-transform: translateX(-90px);
+    -o-transform: translateX(-90px);
+}
+
+.btn-centre:active{
+    box-shadow: none;
+    transform: translate(-98px, 8px);
+    -webkit-transform: translate(-98px, 8px);
+    -moz-transform: translate(-98px, 8px);
+    -ms-transform: translate(-98px, 8px);
+    -o-transform: translate(-98px, 8px);
+    color: var(--dark-gray);
 }
 
 
