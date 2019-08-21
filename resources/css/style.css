@@ -106,7 +106,7 @@ a {
 }
 
 /*primary header*/
-.primary-header{
+nav{
     display: block;
     position: relative;
     background-color: var(--light-gray);
@@ -121,12 +121,12 @@ a {
     float: left;
 }
 
-.primary-header ul{
+nav ul{
     display: block;
     align-items: center;
 }
 
-.primary-header form{
+nav form{
     margin-top: 12px
 }
 
@@ -134,20 +134,20 @@ a {
     margin-right: 70px;
 }
 
-.primary-header img{
+nav img{
     display: block;
     height: 80px;
     width: auto;
 }
 
-.primary-header li{
+nav li{
     display: inline-flex;
     float: left;
     margin-right: 2em;
     align-items: center;
 }
 
-.primary-header li a{ 
+nav li a{ 
     color: var(--dark-gray);
 }
 
@@ -163,15 +163,6 @@ a {
 .site-map a:active,
 .site-map a:hover {
     color: var(--light-gray);
-}
-
-.site-map a:active :before,
-.site-map a:hover :before{
-    content:' ';
-    background-color: var(--dark-gray);
-    height: 45px;
-    width:auto
-    
 }
 
 .nav-buttons:before{
