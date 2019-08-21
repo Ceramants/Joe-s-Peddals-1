@@ -10,6 +10,7 @@
 08-sales
 09-quick access
 10-footer
+11-attoms
 */
 
 /** 01-basic setup **/
@@ -21,8 +22,14 @@
 }
 
 body{
-    margin: 0;
+    background-color: white;
+}
+
+*,
+:before,
+:after{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -33,18 +40,33 @@ body{
 .row{
     width: 80vw;
     height: auto;
-    /* background-color: pink; */
+    position: relative;
+    margin-left: 10%;
+
+    background-color: lightcoral;
 }
 
-ul{
+ul{ 
     margin: 0;
+}
+
+.section-tittles{
+    padding: 40px 0;
+    text-align: center;
+    color: var(--light-gray);
+}
+
+mark{
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    padding: 10px 20px
 }
 
 /** 02-text **/
 
 h1 {
     font-family: 'New Rocker', cursive;
-    font-size: 48px;
+    font-size: 44px;
 }
 
 h2 {
@@ -81,6 +103,10 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+.hr-dark {
+    border: 1px solid var(--dark-gray);
+    margin-top: 40px;
+}
 /** 03-header **/
 
 /*secondary header*/
@@ -95,7 +121,7 @@ a {
     float: right;
     margin-right: 2em;
     font-size: 14px;
-    padding-top: 7px;
+    margin-top: 8px;
     color: var(--dark-gray);
     transition: color 0.3s ease-in-out;
     -webkit-transition: color 0.3s ease-in-out;
@@ -121,17 +147,13 @@ nav{
 }
 
 nav ul{
-    display: block;
+    display: inline-flex;
     align-items: center;
     height: 100%;
 }
 
 .nav-block{
-    margin-top: 16px
-}
-
-nav form{
-    margin-top: 12px
+    margin-left: 40px
 }
 
 .nav-logo{
@@ -147,7 +169,8 @@ nav img{
 nav li{
     display: inline-flex;
     float: left;
-    margin-right: 2em;
+    margin-right: 3.5em;
+    letter-spacing: 0.3em;
     align-items: center;
 }
 
@@ -167,18 +190,26 @@ nav li a{
 .site-map a:active,
 .site-map a:hover {
     color: var(--light-gray);
+    background-color: var(--dark-gray);
+}
+
+nav li :last-child{
+    margin-right: 0;
 }
 
 .nav-buttons:before{
     content: '·';
     font-size: 28px;
     font-weight: bold;
-    display: inline-block;
-    margin-right: 1em;
+    position: absolute;
+    transform: translateX(-1.2em);
+    -webkit-transform: translateX(-1.2em);
+    -moz-transform: translateX(-1.2em);
+    -ms-transform: translateX(-1.2em);
+    -o-transform: translateX(-1.2em);
 }
 
 .form-container{
-    margin: 20px auto;
     width: 300px;
     align-items: center;
 }
@@ -199,7 +230,23 @@ input#search-bar{
 
 /** 04-homepage image **/
 
+.hp-img img{
+    width: 100%;
+}
+
 /** 05-featured **/
+
+.featured{
+    background-color: lightblue;
+}
+
+/* .section-tittles{
+    padding: 40px 0;
+    text-align: center;
+    color: var(--light-gray);
+    background-color: var(--dark-gray);
+
+} */
 
 /** 06-new arrivals **/
 
@@ -210,6 +257,66 @@ input#search-bar{
 /** 09-quick access **/
 
 /** 10-footer **/
+
+/** 11-atoms **/
+
+/*buttons*/
+
+.btn-dark{
+    color: var(--dark-gray);
+    background-color: transparent;
+    margin: 20px;
+    border: 2px solid var(--dark-gray);
+    height: 40px;
+    width: 180px;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    letter-spacing: 2px;
+    box-shadow: rgb(33,31,31) 0px 0px 0px,  rgb(33,31,31) -1px 1px 0px,  rgb(33,31,31) -2px 2px 0px,  rgb(33,31,31) -3px 3px 0px,  rgb(33,31,31) -4px 4px 0px,  rgb(33,31,31) -5px 5px 0px,  rgb(33,31,31) -6px 6px 0px,  rgb(33,31,31) -7px 7px 0px,  rgb(33,31,31) -8px 8px 0px;
+    transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+    -webkit-transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+    -moz-transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+    -ms-transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+    -o-transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+}
+
+.btn-dark:active{
+    box-shadow: none;
+    transform: translate(-8px, 8px);
+    -webkit-transform: translate(-8px, 8px);
+    -moz-transform: translate(-8px, 8px);
+    -ms-transform: translate(-8px, 8px);
+    -o-transform: translate(-8px, 8px);
+    color: var(--dark-gray);
+}
+
+.btn-light{
+    color: white;
+    background-color: transparent;
+    margin: 20px;
+    border: 2px solid white;
+    height: 40px;
+    width: 180px;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    letter-spacing: 2px;
+    box-shadow: rgb(255,255,255) 0px 0px 0px,  rgb(255,255,255) -1px 1px 0px,  rgb(255,255,255) -2px 2px 0px,  rgb(255,255,255) -3px 3px 0px,  rgb(255,255,255) -4px 4px 0px,  rgb(255,255,255) -5px 5px 0px,  rgb(255,255,255) -6px 6px 0px,  rgb(255,255,255) -7px 7px 0px,  rgb(255,255,255) -8px 8px 0px;
+    transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+    -webkit-transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+    -moz-transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+    -ms-transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+    -o-transition: transform ease-in-out 150ms, box-shadow ease-in-out 150ms;
+}
+
+.btn-light:active{
+    box-shadow: none;
+    transform: translate(-8px, 8px);
+    -webkit-transform: translate(-8px, 8px);
+    -moz-transform: translate(-8px, 8px);
+    -ms-transform: translate(-8px, 8px);
+    -o-transform: translate(-8px, 8px);
+    color: white;
+}
 
 
 
