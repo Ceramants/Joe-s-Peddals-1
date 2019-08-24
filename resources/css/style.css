@@ -78,6 +78,16 @@ mark{
     height: 0;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+:focus,
+:active{
+    outline-color: var(--orange);
+}
+
 /** 02-text **/
 
 h1 {
@@ -125,8 +135,14 @@ a {
     border: 1px solid var(--dark-gray);
     margin: 70px 0 0 10%;
     width: 80vw;
-
 }
+
+.hr-light {
+    border: 1px solid white;
+    margin: 70px 0 0 10%;
+    width: 80vw;
+}
+
 /** 03-header **/
 
 /*secondary header*/
@@ -280,9 +296,14 @@ input#search-bar{
     margin-bottom: 80px
 }
 
-.inner-row p{
-    margin-bottom:54px
+.inner-row button{
+    position: absolute;
+    bottom: 8px;
 }
+
+/* .inner-row p{
+    margin-bottom:54px
+} */
 
 /** 06-new arrivals **/
 
@@ -305,22 +326,71 @@ input#search-bar{
 }
 
 .card h6,
-.card p,
-.card h3{
+.card p{
     margin-top: 0.5em;
     margin-bottom: 0;
 }
 
-
+.card h3{
+    margin-top: 1em;
+}
 /** 07-joe's picks **/
 
 .joe-picks{
     background-color: var(--light-gray);
 }
 
+.joe-picks ul{
+    display: inline-flex;
+    align-items: center;
+}
+
+#zombie-left{
+    height: 150px;
+    transform: rotate(60deg) translateX(-550px);
+    position: absolute;
+    top: 495px;
+    -webkit-transform: rotate(60deg) translateX(-550px);
+    -moz-transform: rotate(60deg) translateX(-550px);
+    -ms-transform: rotate(60deg) translateX(-550px);
+    -o-transform: rotate(60deg) translateX(-550px);
+}
+
+#zombie-right{
+    height: 150px;
+    transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    position: absolute;
+    top: 20px;
+    margin-left: 13em;
+}
+
 /** 08-sales **/
 
+.sales{
+    background-color: var(--dark-gray)
+}
+
+.sales h6,
+.sales h3,
+.sales p{
+    color: white;
+}
+
 /** 09-quick access **/
+
+.quick-access img{
+    object-fit: cover;
+    height: 13em;
+    width: auto;
+}
+
+.quick-access{
+    
+}
 
 /** 10-footer **/
 
@@ -402,7 +472,6 @@ input#search-bar{
     -moz-transform: translate(-98px, 8px);
     -ms-transform: translate(-98px, 8px);
     -o-transform: translate(-98px, 8px);
-    color: var(--dark-gray);
 }
 
 
