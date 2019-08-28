@@ -33,11 +33,11 @@
             </nav>
         </header>
         <main>
-            <!--homepage image-->
+<!--homepage image-->
             <section class="row hp-img">
                 <img src="resources/Illustration/header/master-header03.png" alt="explosive music">
             </section>
-            <!--featured-->
+<!--featured-->
             <section class="row featured">
                 <header class="section-tittles">
                     <h1><mark>Featured</mark></h1>
@@ -60,7 +60,7 @@
                     
                 </div>
             </section>
-            <!--new arrivals-->
+<!--new arrivals-->
             <section class="row new-arrivals">
                 <header class="section-tittles">
                     <h1><mark>New Arrivals</mark></h1>
@@ -89,7 +89,7 @@
                 <hr class="hr-dark">
                 <button class="btn-dark btn-centre">View All</button>
             </section>
-            <!--joe's picks-->
+<!--joe's picks-->
             <section class="row joe-picks">
                 <header class="section-tittles">
                     <img id="zombie-left" src="resources/Illustration/hands/zombie/zombie-handsleft-hand.png">
@@ -120,7 +120,7 @@
                 <hr class="hr-dark">
                 <button class="btn-dark btn-centre">View All</button>  
             </section>
-            <!--sales-->
+<!--sales-->
             <section class="row sales">
                 <header class="section-tittles">
                     <h1><mark>Sales</mark></h1>
@@ -147,68 +147,71 @@
                     </div>    
                 </div>
                 <hr class="hr-light">
-                <button class="btn-light  btn-centre">View All</button>
+                <a href="#0" class="btn-light  btn-centre">View All</a>
             </section>
-            <!--quick access-->
+<!--quick access-->
             <section class="row inner-row quick-access clearfix">
-                <div class="card">
+                <figure class="card">
                     <img src="resources/Illustration/objects/pedals.png" alt="pedals illustration">
-                    <button class="btn-dark">Pedals</button>
-                </div>
-                <div class="card">
+                    <a href="#0" class="btn-dark">Pedals</a>
+                </figure>
+                <figure class="card">
                     <img src="resources/Illustration/objects/accesories.png" alt="aux illustration">
-                    <button class="btn-dark">Accessories</button>
-                </div>
-                <div class="card">
+                    <a href="#0" class="btn-dark">Accessories</a>
+                </figure>
+                <figure class="card">
                     <img src="resources/Illustration/objects/used.png" alt="used pedals illustration">
-                    <button class="btn-dark">Used</button>
-                </div>
+                    <a href="#0" class="btn-dark">Used</a>
+                </figure>
             </section>
         </main>
-        <footer>
-            <div class="upper-footer">
-                <div>
-                    <img src="resources/img/logo/joes-pedals-logo.png" alt="Joe's Pedals logo">
-                    <h5>Purveyors of the finest bespoke pedals and stompboxes known to humanity</h5>
+<!--footer-->
+        <footer class="main-footer">
+            <section class="footer-row">
+                <div class="card col">
+                    <img  src="resources/img/logo/joes-pedals-logo.png" id="footer-logo" alt="Joe's Pedals logo">
+                    <h5>Purveyors of the finest bespoke 
+                        pedals and stompboxes 
+                        known to humanity</h5>
                 </div>
-                <div>
-                    <div>
-                        <a href="#">Help</a>
-                        <a href="#">Shipping information</a>
-                        <a href="#">Returns & Refund Policy</a>
-                    </div>
-
-                    <div>
+                <div class="card col">
+                    <ul id=footer-site-map>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Shipping information</a></li>
+                        <li><a href="#">Returns & Refund Policy</a></li>
+                    </ul>
+                    <div id="social-media">
                         <a href="#"><img src="resources/img/iconmonstr-facebook-4.svg" alt="facebook link"></a>
                         <a href="#"><img src="resources/img/iconmonstr-twitter-4.svg" alt="twitter link"></a>
                         <a href="#"><img src="resources/img/iconmonstr-youtube-4.svg" alt="youtube link"></a>
                     </div>
-                    <div>
-                        <form action="#">
-                            <div class="newsletter-container">
-                                <h2>Newsletter</h2>
-                                <input type="text" name="email">
-                                <div>
-                                    <button class="btn-dark">Subscribe</button>
-                                </div>
+                </div>
+                <div class="card col" id="newsletter">
+                    <form action="#">
+                        <ul class="newsletter-container">
+                            <li><h2>Newsletter</h2></li>
+                            <li><input type="text" name="email"></li>
+                            <li><button class="btn-dark" action="Submit">Subscribe</button></li>
+                        </ul>
+                    </form>
+                    <img src="resources/Illustration/hands/zombie/zombie-handstune.png" alt="">
+                </div>
+            </section>  
 
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-lower">
-                <div>
-                    <p>Terms & Conditions / Privacy Policy</p>
-                </div>
-                <div>
-                    <p>© 2010 - 2019 Joe's Pedals Ltd</p>
-                </div>
-                <div>
-                    <p>Design & Built by Buffalo</p>
-                </div>
-            </div>
         </footer>
+        <aside class="footer-lower footer-row">
+            <ul>
+                <li id="terms">
+                    <p>Terms & Conditions / Privacy Policy</p>
+                </li>
+                <li id="copyright">
+                    <p>© 2010 - 2019 Joe's Pedals Ltd</p>
+                </li>
+                <li id="design">
+                    <p>Design & Built by Buffalo</p>
+                </li>
+            </ul>
+        </aside>
     </body>
 
 
