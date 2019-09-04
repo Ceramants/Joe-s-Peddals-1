@@ -1,8 +1,11 @@
 /*INDEX*/
 /*
+
 01-basic setup
 02-text
 03-header
+
+----HOMEPAGE----
 04-homepage image
 05-featured
 06-new arrivals
@@ -11,6 +14,15 @@
 09-quick access
 10-footer
 11-attoms
+
+----SHOP----
+12-breadcrumbs
+13-product filter
+14-shop featured
+15-shop-items
+16-old stuff
+
+----ABOUT----
 */
 
 /** 01-basic setup **/
@@ -22,7 +34,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: rgb(240, 105, 87);
     overflow-x: hidden;
 }
 
@@ -122,6 +134,7 @@ h3 {
 h4 {
     font-family: 'New Rocker', cursive;
     font-size: 22px;
+    letter-spacing: 0.3em;
 }
 
 h5 {
@@ -219,7 +232,6 @@ nav li{
     display: inline-flex;
     float: left;
     margin-right: 3.5em;
-    letter-spacing: 0.3em;
     align-items: center;
 }
 
@@ -591,14 +603,6 @@ input#search-bar{
 
 /*buttons*/
 
-/* .btn-dark{
-
-    background: lightpink;
-    background-size: 180px 180px;
-
-
-} */
-
 .btn{
     text-align: center;
     padding-top: 8px;
@@ -679,6 +683,47 @@ button.btn-light{
     line-height: 1px;
 }
 
+
+/*select dropdown*/
+
+.dropdown select {
+cursor: pointer;
+background-color: transparent;
+color: #555;
+font-size: inherit;
+padding: .5em;
+padding-right: 3em;	
+border: 2px solid #555;
+margin: 0;
+text-indent: 0.01px;
+text-overflow: '';
+-webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.dropdown::before,
+.dropdown::after {
+content: "";
+position: absolute;
+pointer-events: none;
+}
+
+.dropdown::after { /*  Custom dropdown arrow */
+content: "\25BC";
+height: 1em;
+font-size: .8em;
+line-height: 1;
+right: .8em;
+top: 50%;
+margin-top: -.4em;
+color: #555;
+}
+
+.dropdown select option{
+border: 2px solid #555;
+background: #fff;
+color: #555;
+margin: 5px 0;
+}
 
 
 

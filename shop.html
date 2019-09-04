@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Joe's Peddals</title>
+        <title>Joe's Pedals-Pedals</title>
 
         <link rel="stylesheet" href="resources/css/style.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,10 +17,10 @@
             </aside>
             <nav>
                 <ul class="nav-block">
-                    <li class="nav-logo"><a href="#"><img src="resources/img/logo/joes-pedals-logo.png" alt="Joe's Pedals logo" ></a></li>
+                    <li class="nav-logo"><a href="index.html"><img src="resources/img/logo/joes-pedals-logo.png" alt="Joe's Pedals logo" ></a></li>
                     <li>
                         <ul>
-                            <li class="site-map"><a href="#"><h4>Pedals</h4></a></li>
+                            <li class="site-map"><a href="shop.html"><h4>Pedals</h4></a></li>
                             <li class="nav-buttons site-map"><a href="#"><h4>Accessories</h4></a></li>
                             <li class="nav-buttons site-map"><a href="#"><h4>Used</h4></a></li>
                             <li class="nav-buttons site-map"><a href="#"><h4>Blog</h4></a></li>
@@ -32,51 +32,274 @@
                 </ul>
             </nav>
         </header>
+<!--BREADCRUMBS-->        
+        <aside>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Pedals</a></li>
+                </ol>
+            </nav>
+            <select class="dropdown">
+                <option value="new-arrivals">New Arrivals</option>
+                <option value="popular"></option>
+                <option value="lowest">Low-High Prices</option>
+                <option value="highest">High-Low Proces</option>
+            </select>
+        </aside>
+<!--MAIN-->         
         <main>
-
+<!--STORE--> 
+            <!--filter--> 
+            <aside>
+                <section class="brand">
+                    <h4><mark>Brand</mark></h4>
+                    <section class="checkbox-filter">
+                        <input type="checkbox" value="adventure-audio"><p>Adventure Audio</p>
+                        <input type="checkbox" value="custom-effects"><p>A.I.B Custom Effects</p>
+                        <input type="checkbox" value="analog-alien"><p>Analog Alien</p>
+                        <input type="checkbox" value="bae-audio"><p>Bae Audio</p>
+                        <input type="checkbox" value="bearfoot-guitar"><p>BearFoot Guitar Effects</p>
+                        <input type="checkbox" value="black-arts"><p>Black Arts Toneworks</p>
+                        <input type="checkbox" value="black-cat"><p>Black Cat Pedals</p>
+                        <input type="checkbox" value="blackout"><p>Blackout Effectors</p>
+                        <input type="checkbox" value="bmf-effects"><p>BMF Effects</p>
+                        <input type="checkbox" value="buffalo"><p>Buffalo FX</p>
+                        <input type="checkbox" value="cast-engineering"><p>Cast Engineering</p>
+                        <input type="checkbox" value="castledine"><p>Castledine Electronics</p>
+                        <input type="checkbox" value="electronic-audio-experiments"><p>Electronic Audio Experiments</p>
+                    </section>
+                </section>
+                <section class="effect">
+                    <h4><mark>Effect</mark></h4>
+                    <section class="checkbox-filter">
+                        <input type="checkbox" value="adventure-audio"><p>Adventure Audio</p>
+                        <input type="checkbox" value="custom-effects"><p>A.I.B Custom Effects</p>
+                        <input type="checkbox" value="analog-alien"><p>Analog Alien</p>
+                        <input type="checkbox" value="bae-audio"><p>Bae Audio</p>
+                        <input type="checkbox" value="bearfoot-guitar"><p>BearFoot Guitar Effects</p>
+                        <input type="checkbox" value="black-arts"><p>Black Arts Toneworks</p>
+                        <input type="checkbox" value="black-cat"><p>Black Cat Pedals</p>
+                        <input type="checkbox" value="blackout"><p>Blackout Effectors</p>
+                        <input type="checkbox" value="bmf-effects"><p>BMF Effects</p>
+                        <input type="checkbox" value="buffalo"><p>Buffalo FX</p>
+                        <input type="checkbox" value="cast-engineering"><p>Cast Engineering</p>
+                        <input type="checkbox" value="castledine"><p>Castledine Electronics</p>
+                        <input type="checkbox" value="electronic-audio-experiments"><p>Electronic Audio Experiments</p>
+                    </section>
+                </section>
+                <section class="budget">
+                    <h4><mark>Budget</mark></h4>
+                    <div class="slide-container">
+                        <input type="range" min="0" max="1000" value="43" class="slider" id="myRange">
+                    </div>
+                </section>
+                <button class="btn btn-dark">Reset Filters</button>
+            </aside>
+<!--SHOP-->
+            <section class="store-column">
+                <!--featured-->
+                <section class="store-feature">
+                    <h1>Featured</h1>
+                    <hr class="hr-dark">
+                    <figure>
+                        <img src="resources/img/Kafuzz.jpg" alt="Kafuzz">
+                    </figure>
+                    <div>
+                        <ul class="featured-content clearfix">
+                            <li><h4>
+                            <mark>Faceless fx De Sade Fuzz</mark>
+                            </h4></li>
+                            <li><p>The De Sade Fuzz is an old school fuzz box based on the first version Tone Bender, commonly known as the MkI.</p></li>
+                            <li class="featured-price">£73</li>
+                            <li><strong>Brand:</strong> Faceless fx</li>
+                            <li><strong>Effect:</strong> Fuzz</li>
+                            <li><a href="#0" class="btn btn-dark"> Learn More</a></li>
+                        </ul>
+                    </div>
+                    <hr class="hr-dark">
+                </section>
+                <!--store items-->
+                <section class="store-main">
+                    <ul class="clearfix store-items">
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0">
+                                <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                                <h6>Tortenmann TF1 Filter</h6>
+                                <p><i>by</i> Electronic Audio Experiments</p>
+                                <h3>£90</h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="hr-dark">
+                    <button class="btn btn-dark">Load More</button>
+                    <button class="btn btn-dark">Back to Top</button>
+                </section>
+            </section>
+<!--OLD STUFF-->
+            <section class="row old-stuff">
+                <header class="section-tittles">
+                    <img id="zombie-left" src="resources/Illustration/hands/zombie/zombie-handsleft-hand.png">
+                    <h1><mark>Old Stuffs</mark></h1>
+                    <img id="zombie-right" src="resources/Illustration/hands/zombie/zombie-handsright-hand.png">
+                    <hr class="hr-dark">
+                </header>
+                <div class="inner-row clearfix">
+                    <div class="card">
+                        <a href="#"><img src="resources/img/Bassstation.jpg" alt="green base station">
+                        <h6>Tortenmann TF1 Filter</h6>
+                        <p><i>by</i> Electronic Audio Experiments</p>
+                        <h3>£90</h3></a>
+                    </div>
+                    <div class="card">
+                        <a href="#"><img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
+                        <h6>Tortenmann TF1 Filter</h6>
+                        <p><i>by</i> Electronic Audio Experiments</p>
+                        <h3>£134</h3></a>
+                    </div>
+                    <div class="card"> 
+                        <a href="#"><img src="resources/img/AnalogAlien-JoeWalsh.jpg" alt="Analog alien">
+                        <h6>Tortenmann TF1 Filter</h6>
+                        <p><i>by</i> Electronic Audio Experiments</p>
+                        <h3>£76</h3></a>
+                    </div>    
+                </div>
+                <hr class="hr-dark">
+                <a class="btn btn-dark btn-centre">View All</a>  
+            </section>
         </main>
-        <footer>
-            <div class="upper-footer">
-                <div>
-                    <img src="resources/img/logo/joes-pedals-logo.png" alt="Joe's Pedals logo">
-                    <h5>Purveyors of the finest bespoke pedals and stompboxes known to humanity</h5>
-                </div>
-                <div>
-                    <div>
-                        <a href="#">Help</a>
-                        <a href="#">Shipping information</a>
-                        <a href="#">Returns & Refund Policy</a>
-                    </div>
-
-                    <div>
-                        <a href="#"><img src="resources/img/iconmonstr-facebook-4.svg" alt="facebook link"></a>
-                        <a href="#"><img src="resources/img/iconmonstr-twitter-4.svg" alt="twitter link"></a>
-                        <a href="#"><img src="resources/img/iconmonstr-youtube-4.svg" alt="youtube link"></a>
-                    </div>
-                    <div>
-                        <form action="#">
-                            <div class="newsletter-container">
-                                <h2>Newsletter</h2>
-                                <input type="text" name="email">
-                                <div>
-                                    <button class="btn-dark">Subscribe</button>
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
+<!--FOOTER-->
+<footer class="main-footer">
+        <section class="footer-row">
+            <div class="card col">
+                <img  src="resources/img/logo/joes-pedals-logo.png" id="footer-logo" alt="Joe's Pedals logo">
+                <h5>Purveyors of the finest bespoke 
+                    pedals and stompboxes 
+                    known to humanity</h5>
+            </div>
+            <div class="card col">
+                <ul id=footer-site-map>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Shipping information</a></li>
+                    <li><a href="#">Returns & Refund Policy</a></li>
+                </ul>
+                <div id="social-media">
+                    <a href="#"><img src="resources/img/iconmonstr-facebook-4.svg" alt="facebook link"></a>
+                    <a href="#"><img src="resources/img/iconmonstr-twitter-4.svg" alt="twitter link"></a>
+                    <a href="#"><img src="resources/img/iconmonstr-youtube-4.svg" alt="youtube link"></a>
                 </div>
             </div>
-            <div class="footer-lower">
-                <div>
-                    <p>Terms & Conditions / Privacy Policy</p>
-                </div>
-                <div>
-                    <p>© 2010 - 2019 Joe's Pedals Ltd</p>
-                </div>
-                <div>
-                    <p>Design & Built by Buffalo</p>
-                </div>
+            <div class="card col" id="newsletter">
+                <form action="#">
+                    <ul class="newsletter-container">
+                        <li><h2>Newsletter</h2></li>
+                        <li><input type="text" name="email"></li>
+                        <li><button class="btn btn-dark" action="Submit">Subscribe</button></li>
+                    </ul>
+                </form>
+                <img src="resources/Illustration/hands/zombie/zombie-handstune.png" alt="">
             </div>
-        </footer>
+        </section>  
+
+    </footer>
+    <aside class="footer-lower footer-row">
+        <div id="terms">
+            <a href="#0">Terms & Conditions / Privacy Policy</a>
+        </div>
+        <div id="copyright">
+            <p>© 2010 - 2019 Joe's Pedals Ltd</p>
+        </div>
+        <div id="design">
+            <a href="https://builtbybuffalo.com/">Design & Built by Buffalo</a>
+        </div>
+    </aside>
     </body>
+</html>    
