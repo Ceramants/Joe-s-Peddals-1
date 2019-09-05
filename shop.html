@@ -37,7 +37,7 @@
 <!--MAIN-->         
         <main>
             <!--BREADCRUMBS-->
-                <aside class="breadcrumbs-nav ninety-five">
+                <aside class="breadcrumbs-nav">
                     <small class="breadcrumbs">
                         <ol>
                             <li><a href="index.html">Home</a></li>
@@ -53,44 +53,48 @@
                 </aside> 
             <!--filter-->
                 <section class="shop-main-body"> 
-                    <aside class="product-filter clearfix">
-                    <section class="brand">
+                    <aside class="product-filter">
+                    <section class="brand filter-header">
                         <h4><mark>Brand</mark></h4>
-                        <section class="checkbox-filter">
-                            <input type="checkbox" value="adventure-audio"><p>Adventure Audio</p>
-                            <input type="checkbox" value="custom-effects"><p>A.I.B Custom Effects</p>
-                            <input type="checkbox" value="analog-alien"><p>Analog Alien</p>
-                            <input type="checkbox" value="bae-audio"><p>Bae Audio</p>
-                            <input type="checkbox" value="bearfoot-guitar"><p>BearFoot Guitar Effects</p>
-                            <input type="checkbox" value="black-arts"><p>Black Arts Toneworks</p>
-                            <input type="checkbox" value="black-cat"><p>Black Cat Pedals</p>
-                            <input type="checkbox" value="blackout"><p>Blackout Effectors</p>
-                            <input type="checkbox" value="bmf-effects"><p>BMF Effects</p>
-                            <input type="checkbox" value="buffalo"><p>Buffalo FX</p>
-                            <input type="checkbox" value="cast-engineering"><p>Cast Engineering</p>
-                            <input type="checkbox" value="castledine"><p>Castledine Electronics</p>
-                            <input type="checkbox" value="electronic-audio-experiments"><p>Electronic Audio Experiments</p>
+                        <section>
+                            <ul>
+                                <li><label><input type="checkbox" value="adventure-audio"/>Adventure Audio</label></li>
+                                <li><label><input type="checkbox" value="custom-effects">A.I.B Custom Effects</label></li>
+                                <li><label><input type="checkbox" value="analog-alien">Analog Alien</label></li>
+                                <li><label><input type="checkbox" value="bae-audio">Bae Audio</label></li>
+                                <li><label><input type="checkbox" value="bearfoot-guitar">BearFoot Guitar Effects</label></li>
+                                <li><label><input type="checkbox" value="black-arts">Black Arts Toneworks</label></li>
+                                <li><label><input type="checkbox" value="black-cat">Black Cat Pedals</label></li>
+                                <li><label><input type="checkbox" value="blackout">Blackout Effectors</label></li>
+                                <li><label><input type="checkbox" value="bmf-effects">BMF Effects</label></li>
+                                <li><label><input type="checkbox" value="buffalo">Buffalo FX</label></li>
+                                <li><label><input type="checkbox" value="cast-engineering">Cast Engineering</label></li>
+                                <li><label><input type="checkbox" value="castledine">Castledine Electronics</label></li>
+                                <li><label><input type="checkbox" value="electronic-audio-experiments">Electronic Audio Experiments</label></li>
+                            </ul>    
                         </section>
                     </section>
-                    <section class="effect">
+                    <section class="effect filter-header">
                         <h4><mark>Effect</mark></h4>
                         <section class="checkbox-filter">
-                            <input type="checkbox" value="adventure-audio"><p>Adventure Audio</p>
-                            <input type="checkbox" value="custom-effects"><p>A.I.B Custom Effects</p>
-                            <input type="checkbox" value="analog-alien"><p>Analog Alien</p>
-                            <input type="checkbox" value="bae-audio"><p>Bae Audio</p>
-                            <input type="checkbox" value="bearfoot-guitar"><p>BearFoot Guitar Effects</p>
-                            <input type="checkbox" value="black-arts"><p>Black Arts Toneworks</p>
-                            <input type="checkbox" value="black-cat"><p>Black Cat Pedals</p>
-                            <input type="checkbox" value="blackout"><p>Blackout Effectors</p>
-                            <input type="checkbox" value="bmf-effects"><p>BMF Effects</p>
-                            <input type="checkbox" value="buffalo"><p>Buffalo FX</p>
-                            <input type="checkbox" value="cast-engineering"><p>Cast Engineering</p>
-                            <input type="checkbox" value="castledine"><p>Castledine Electronics</p>
-                            <input type="checkbox" value="electronic-audio-experiments"><p>Electronic Audio Experiments</p>
+                            <ul>
+                                <li><label><input type="checkbox" value="adventure-audio"/>Adventure Audio</label></li>
+                                <li><label><input type="checkbox" value="custom-effects">A.I.B Custom Effects</label></li>
+                                <li><label><input type="checkbox" value="analog-alien">Analog Alien</label></li>
+                                <li><label><input type="checkbox" value="bae-audio">Bae Audio</label></li>
+                                <li><label><input type="checkbox" value="bearfoot-guitar">BearFoot Guitar Effects</label></li>
+                                <li><label><input type="checkbox" value="black-arts">Black Arts Toneworks</label></li>
+                                <li><label><input type="checkbox" value="black-cat">Black Cat Pedals</label></li>
+                                <li><label><input type="checkbox" value="blackout">Blackout Effectors</label></li>
+                                <li><label><input type="checkbox" value="bmf-effects">BMF Effects</label></li>
+                                <li><label><input type="checkbox" value="buffalo">Buffalo FX</label></li>
+                                <li><label><input type="checkbox" value="cast-engineering">Cast Engineering</label></li>
+                                <li><label><input type="checkbox" value="castledine">Castledine Electronics</label></li>
+                                <li><label><input type="checkbox" value="electronic-audio-experiments">Electronic Audio Experiments</label></li>
+                            </ul>
                         </section>
                     </section>
-                    <section class="budget">
+                    <section class="budget filter-header">
                         <h4><mark>Budget</mark></h4>
                         <div class="slide-container">
                             <input type="range" min="0" max="1000" value="43" class="slider" id="myRange">
@@ -121,107 +125,255 @@
                     </section>
                     <!--store items-->
                     <section class="store-items">
-                        <ul>
+                        <ul class="wrap">
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                      <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
                             <li>
                                 <a href="#0">
-                                    <img src="resources/img/KlonKTR.jpg" alt="Klon KTR">
-                                    <h6>Tortenmann TF1 Filter</h6>
-                                    <p><i>by</i> Electronic Audio Experiments</p>
-                                    <h3>£90</h3>
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
                                 </a>
                             </li>
+
+                            <!-- <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <ul class="item-content">
+                                        <li><img src="resources/img/KlonKTR.jpg" alt="Klon KTR"></li>
+                                        <li><h6>Tortenmann TF1 Filter</h6></li>
+                                        <li><p><i>by</i> Electronic Audio Experiments</p></li>
+                                        <li><h3>£90</h3></li>  
+                                    </ul>
+                                </a>
+                            </li> -->
                         </ul>
                         <hr class="hr-dark">
-                        <button class="btn btn-dark">Load More</button>
-                        <button class="btn btn-dark">Back to Top</button>
+                        <section class="store-pagination">
+                            <button class="btn btn-dark">Load More</button>
+                            <button class="btn btn-dark">Back to Top</button>
+                        </section>
+                        
                     </section>
                 </section>
             </section>
