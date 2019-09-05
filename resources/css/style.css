@@ -725,6 +725,58 @@ color: #555;
 margin: 5px 0;
 }
 
+/*--12-breadcrumbs--*/
+
+.shop-main-body{
+    width: 100%;
+    height: auto;
+    padding: 0 2.5vw;
+    background: var(--light-gray);
+    position: relative;
+}
+
+.breadcrumbs-nav{
+    height: 10vh;
+    background: var(--light-gray);
+    padding-top: 4vh;
+}
+
+.breadcrumbs{
+    display: inline-flexbox;
+    float: left;
+}
+
+.breadcrumbs li{
+    float: left;
+    list-style-type: none;
+    padding: 0.5em;
+}
+
+.dropdown{
+    display: inline-flex;
+    float: right;
+}
+
+/*--13-product filter--*/
+
+.product-filter{
+    float: left;
+    width: 22vw;
+    background: lightgoldenrodyellow
+}
+
+/*--14-shop featured--*/
+
+.store-column{
+    float: left;
+    width: 72vw;
+    background: lightcyan
+}
+
+.store-featured
+/*--15-shop-items--*/
+
+/*--16-old stuff--*/
 
 
 
